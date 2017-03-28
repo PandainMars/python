@@ -1,11 +1,11 @@
 # Comparison of booleans
-True == False
+print(True == False)
 
 # Comparison of integers
--5 * 15 != 75
+print(-5 * 15 != 75)
 
 # Comparison of strings
-"pyscript" == "Pyscript"
+print("pyscript" == "PyScript")
 
 # Compare a boolean with an integer
-True == 1
+print(True == 1)
