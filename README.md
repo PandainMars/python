@@ -1,2 +1,3 @@
 # python
-# All information come from DataCamp
+Small projects of python
+Learning process
