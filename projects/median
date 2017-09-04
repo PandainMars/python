@@ -1,0 +1,10 @@
+def median(inputlist):
+    if inputlist == []:
+      return []
+    new_list = sorted(inputlist)
+    l = len(inputlist)
+    if l%2 == 0:
+      m = (new_list[l/2-1] + new_list[l/2])/2
+    else:
+      m = (new_list[(l-1)/2])
+    return m
