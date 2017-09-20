@@ -1,0 +1,14 @@
+__author__ = "Qun"
+
+def allmin(alist):
+    overallmin = alist[0]
+    for i in alist:
+        ismin = True
+        for j in alist:
+            if i > j:
+                ismin = False
+        if ismin:
+            overallmin = i
+    return overallmin
+
+print(allmin([2,3,4,1,9]))
