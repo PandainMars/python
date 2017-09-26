@@ -1,0 +1,16 @@
+from test import testEqual
+from pythonds.basic.stack import Stack
+
+def revstring(mystr):
+    # your code here
+    mystack = Stack()
+    revstr = ""
+    for i in mystr:
+        mystack.push(i)
+    while not mystack.isEmpty():
+        revstr = revstr + mystack.pop()
+    return revstr
+
+testEqual(revstring('apple'),'elppa')
+testEqual(revstring('x'),'x')
+testEqual(revstring('1234567890'),'0987654321')
