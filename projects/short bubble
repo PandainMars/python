@@ -1,0 +1,20 @@
+__author__ = "Qun"
+
+def short_bubble(alist):
+    exchange = True
+    passnum = len(alist) - 1
+    while passnum > 0 and exchange:
+        exchange = False
+        for i in range(passnum):
+            if alist[i] > alist[i+1]:
+                temp = alist[i+1]
+                alist[i+1] = alist[i]
+                alist[i] = temp
+                exchange = True
+        passnum = passnum - 1
+
+    return alist
+
+alist=[205,46,40,4,5,6,17,8,130,110]
+short_bubble(alist)
+print(alist)
